@@ -1,0 +1,23 @@
+{
+  "name": "ts-serverless-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mongoose": "^5.7.36",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "apollo-server-micro": "^2.17.0",
+    "dayjs": "^1.8.34",
+    "graphql": "^15.3.0",
+    "graphql-iso-date": "^3.6.1",
+    "mongoose": "^5.10.2"
+  }
+}
