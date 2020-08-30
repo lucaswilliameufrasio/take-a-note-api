@@ -38,7 +38,7 @@ export default {
         }
     },
     Mutation: {
-        save: async (
+        saveNote: async (
             parent,
             { title, content }: { title: INote['title']; content: INote['content'] },
             { dbConnection }: { dbConnection: mongoose.Connection }
