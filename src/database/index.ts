@@ -1,12 +1,11 @@
 import mongoose from 'mongoose'
-
-const uri: string = process.env.MONGO_URI
+import env from '../config/env'
 
 let connection: mongoose.Connection = null
 
 export const getConnection = async (): Promise<mongoose.Connection> => {
     if (connection === null) {
-        connection = await mongoose.createConnection(uri, {
+        connection = await mongoose.createConnection(env.mongoUri, {
             bufferCommands: false,
             bufferMaxEntries: 0,
             useNewUrlParser: true,

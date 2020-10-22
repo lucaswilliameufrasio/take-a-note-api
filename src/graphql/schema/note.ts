@@ -16,5 +16,6 @@ export default gql`
         title: String!
         content: String!
         date: DateTime!
+        userId: String
     }
 `
